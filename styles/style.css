@@ -1,0 +1,230 @@
+body {
+    margin: 0;
+    padding: 0;
+    font-family: "PT Sans", "Arial", sans-serif;
+    font-size: 16px;
+    color: #303846;
+    background-color: #ffffff;
+    background-position: center;
+}
+a {
+    text-decoration: none;
+}
+img {
+    max-width: 100%;
+    height: auto;
+}
+
+.container {
+    width: 1000px;
+    margin: 0 auto;
+}
+.main-header {
+    display: flex;
+    position: fixed;
+    z-index: 2;
+    width: 1000px;
+    flex-direction: row;
+    justify-content: space-between;
+    min-height: 60px;
+    background-color: #ffffff;
+}
+.logo-small p {
+    font-weight: bold;
+    font-size: 16px;
+    margin: auto 10px;
+}
+.site-navigation {
+    display: flex;
+    flex-wrap: wrap;
+    align-items: center;
+    list-style: none;
+}
+.site-navigation a {
+    font-weight: bold;
+    font-size: 14px;
+    font-stretch: normal;
+    color: #303846;
+    margin: auto 10px ;
+}
+.logo-small {
+    display: flex;
+    justify-content: center;
+    align-items: center;
+}
+.logo-small a {
+    margin-left: 10px;
+}
+.promo {
+    position: relative;
+    min-height: 350px;
+    background-image: url("../images/banner.png");
+    background-size: 100%;
+    background-repeat: no-repeat;
+    background-position: center center;
+}
+.main-logo {
+    position: absolute;
+    align-items: center;
+    top: 90px;
+    left: 450px;
+}
+.title {
+    font-size: 38px;
+    font-weight: bold;
+    max-width: 400px;
+    margin: 0 auto;
+    padding-top: 200px;
+    color: #ffffff;
+    text-align: center;
+}
+.promo p {
+    max-width: 400px;
+    margin: 0 auto 10px;
+    color: #ffffff;
+    text-align: center;
+}
+.button-transparent {
+    font-family: "PT Sans", "Arial", sans-serif;
+    font-size: 18px;
+    font-weight: bold;
+    font-stretch: normal;
+    text-align: center;
+    color: #ffffff;
+    background-color: transparent;
+    border: 2px solid #ffffff;
+    border-radius:10px;
+}
+.button-transparent-filter {
+    display: block;
+    width: 140px;
+    padding: 5px;
+    margin: 0 auto;
+}
+/*-----advantages----*/
+.advantages-container {
+    display: flex;
+    justify-content: center;
+}
+.advantage {
+    width: 280px;
+    margin: 30px 10px;
+}
+h2 {
+    font-size: 34px;
+    margin-bottom: 10px;
+}
+.advantage-moon-sea {
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    background-color: #f7f7f7;
+}
+.advantage-place {
+    display: flex;
+    justify-content: center;
+    align-items: center;
+}
+.advantage-content {
+    width: 470px;
+    margin: 40px 0;
+}
+.foto-moon-1 {
+    margin-left: 40px;
+}
+.foto-moon-2 {
+    margin-right: 40px;
+}
+/*------form-----*/
+.form-container {
+    background-color: #f7f7f7;
+}
+.form-container p {
+    font-size: 34px;
+    font-weight: bold;
+    margin-top: 50px;
+    text-align: center;
+}
+.user-form {
+    display: flex;
+    flex-direction: column;
+    justify-content: center;
+    align-items: center;
+}
+.form-parameter {
+    margin-bottom: 20px;
+    width: 380px;
+    border-color: #0ac7b8;
+}
+.form-parameter legend {
+    font-size: 20px;
+    font-weight: bold;
+    color: #0adacb;
+}
+.form-parameter label {
+    display: inline-block;
+    width: 180px;
+    font-weight: bold;
+    margin: 10px 0;
+}
+.form-parameter select {
+    width: 140px;
+    height: 30px;
+    background-color: #ffffff;
+    border: 1.2pt solid #d3d3d3;
+    border-radius: 10px;
+    font-size: 13px;
+    padding-left: 7px;
+}
+.form-parameter option {
+    font-size: 14px;
+}
+.form-parameter input {
+    width: 180px;
+    height: 25px;
+    border: 1.2pt solid #d3d3d3;
+    border-radius: 10px;
+    background-color: #ffffff;
+}
+.button-form {
+    font-size: 17px;
+    font-weight: bold;
+    color: #0adacb;
+    text-align: center;
+    border: 2px solid #0adacb;
+    border-radius:10px;
+    background-color: #ffffff;
+}
+.button-form-filter {
+    padding: 10px 25px;
+    margin: 0 0 60px 300px;
+}
+/*-----footer----*/
+.footer-container{
+    display: flex;
+    justify-content: space-around;
+    align-items: center;
+    color: #ffffff;
+    background-color: #303846;
+}
+.footer-logo {
+    display: flex;
+    flex-direction: column;
+    justify-content: left;
+}
+.footer-project p, .footer-copyright p {
+    font-size: 18px;
+    font-weight: bold;
+}
+.footer-project ul, .footer-copyright ul {
+    font-size: 12px;
+    font-weight: bold;
+}
+.footer-logo span {
+    font-size: 12px;
+    padding: 10px;
+    color: darkgrey;
+}
+.footer-project, .footer-copyright {
+    padding: 20px 0 30px 0;
+}
