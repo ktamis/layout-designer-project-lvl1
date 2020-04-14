@@ -11,26 +11,24 @@
           href="https://fonts.googleapis.com/css?family=PT+Sans:400,700&display=swap&subset=cyrillic-ext">
 </head>
 <body>
-<div class="container">
-    <header>
-        <div class="main-header">
-            <div class="logo-small">
-                <a>
-                    <img src="images/logo.svg" width="30" height="30" alt="Логотип ЖК Лунное море">
-                </a>
-                <p>Лунное море</p>
-            </div>
-            <nav>
-                <ul class="site-navigation">
-                    <li><a href="#advantage">Преимущества</a></li>
-                    <li><a href="#moon-sea">О ЖК</a></li>
-                    <li><a href="#place">Места для отдыха</a></li>
-                </ul>
-            </nav>
-        </div>
-    </header>
-    <main>
-        <section class="promo">
+<header class="main-header">
+    <div class="logo-small">
+        <a>
+            <img src="images/logo.svg" width="30" height="30" alt="Логотип ЖК Лунное море">
+        </a>
+        <p>Лунное море</p>
+    </div>
+    <nav>
+        <ul class="site-navigation">
+            <li><a href="#advantage">Преимущества</a></li>
+            <li><a href="#moon-sea">О ЖК</a></li>
+            <li><a href="#place">Места для отдыха</a></li>
+        </ul>
+    </nav>
+</header>
+<main>
+    <section class="promo">
+        <div class="promo-content">
             <a class="main-logo">
                 <img src="images/logo.svg" width="100" height="100" alt="Логотип ЖК Лунное море">
             </a>
@@ -38,9 +36,11 @@
             <p>Место, откуда не хочется улетать</p>
             <a class="button-transparent button-transparent-filter" href="#form">Забронировать
             </a>
-        </section>
-        <!-----Advantages----->
-        <section class="advantages-container" id="advantage">
+        </div>
+    </section>
+    <!--advantages-->
+    <section id="advantage">
+        <div class="advantages-container">
             <div class="advantage">
                 <h2>Уникальный вид</h2>
                 <p>
@@ -63,17 +63,21 @@
                     России.
                 </p>
             </div>
-        </section>
+        </div>
+    </section>
 
-        <section class="advantage-moon-sea" id="moon-sea">
-            <div class="advantage-content">
+    <section class="grey-container" id="moon-sea">
+        <div class="advantage-moon-sea">
+            <div class="advantage-text">
                 <h2>О ЖК «Лунное море»</h2>
                 <p>
-                    Все чаще жители Москвы предпочитают загородный дом городской квартире, к тому же связь с мегаполисом
+                    Все чаще жители Москвы предпочитают загородный дом городской квартире, к тому же связь с
+                    мегаполисом
                     не теряется – современные скоростные трассы позволяют без труда добираться до столицы и обратно.
                 </p>
                 <p>
-                    Мы построили наши дома на самом близком к Солнцу спутнике, всего в 380 тысяч километров от Земли.
+                    Мы построили наши дома на самом близком к Солнцу спутнике, всего в 380 тысяч километров от
+                    Земли.
                 </p>
             </div>
             <a class="foto-moon-1">
@@ -81,16 +85,18 @@
             </a>
             <div>
             </div>
-        </section>
+        </div>
+    </section>
 
-        <section class="advantage-place" id="place">
+    <section id="place">
+        <div class="advantage-place">
             <div>
                 <a class="foto-moon-2">
                     <img src="images/moon-2.jpg" width="300"
                          alt="Космоснимок лунной поверхности с отдыхающшим астронавтом">
                 </a>
             </div>
-            <div class="advantage-content">
+            <div class="advantage-text">
                 <h2>Места для отдыха</h2>
                 <p>
                     Луна обладает всеми условиями для комфортного отдыха от большого города. В вашем распоряжении 22
@@ -99,13 +105,14 @@
                 <p>Дома располагаются в новом районе «Лунные моря». При необходимости есть автобусы до района «Лунный
                     материк».
                 </p>
-
             </div>
-        </section>
-        <!-----End Advantages----->
+        </div>
+    </section>
+    <!--end advantages-->
 
-        <!-----form------>
-        <section class="form-container" id="form">
+    <!--form-->
+    <section class="grey-container" id="form">
+        <div class="form-container">
             <form class="user-form" method="get" action="#">
                 <p>Оставьте заявку сегодня!</p>
                 <fieldset class="form-parameter">
@@ -142,42 +149,42 @@
                         <input type="text" id="mail">
                     </div>
                 </fieldset>
+                <button class="button-form button-form-filter" type="submit">Отправить</button>
             </form>
             <div>
-                <button class="button-form button-form-filter" type="submit">Отправить</button>
             </div>
-        </section>
-        <!-----end form------>
-    </main>
-
-    <footer>
-        <div class="footer-container">
-            <div class="footer-logo">
-                <div class="logo-small">
-                    <a>
-                        <img src="images/logo.svg" width="30" height="30" alt="Логотип ЖК Лунное море">
-                    </a>
-                    <p>Лунное море</p>
-                </div>
-                <span>© 2032 год</span>
-            </div>
-            <div class="footer-project">
-                <p>Проектная документация</p>
-                <ul>
-                    <li>Скачать</li>
-                    <li>Посмотреть на сайте</li>
-                </ul>
-            </div>
-            <div class="footer-copyright">
-                <p>О застройщике</p>
-                <ul>
-                    <li>Отзывы</li>
-                    <li>Сайт компании</li>
-                </ul>
-            </div>
-
         </div>
-    </footer>
-</div>
+    </section>
+    <!--end form-->
+</main>
+
+<footer class="main-footer">
+    <div class="footer-container">
+        <div class="footer-logo">
+            <div class="logo-small">
+                <a>
+                    <img src="images/logo.svg" width="30" height="30" alt="Логотип ЖК Лунное море">
+                </a>
+                <p>Лунное море</p>
+            </div>
+            <span>© 2032 год</span>
+        </div>
+        <div class="footer-project">
+            <p>Проектная документация</p>
+            <ul>
+                <li>Скачать</li>
+                <li>Посмотреть на сайте</li>
+            </ul>
+        </div>
+        <div class="footer-copyright">
+            <p>О застройщике</p>
+            <ul>
+                <li>Отзывы</li>
+                <li>Сайт компании</li>
+            </ul>
+        </div>
+    </div>
+</footer>
+
 </body>
 </html>

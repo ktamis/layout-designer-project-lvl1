@@ -1,3 +1,6 @@
+html {
+    box-sizing: border-box;
+}
 body {
     margin: 0;
     padding: 0;
@@ -15,16 +18,13 @@ img {
     height: auto;
 }
 
-.container {
-    width: 1000px;
-    margin: 0 auto;
-}
 .main-header {
     display: flex;
     position: fixed;
     z-index: 2;
     flex-direction: row;
     justify-content: space-between;
+    width: 100%;
     min-height: 60px;
     background-color: #ffffff;
 }
@@ -38,7 +38,6 @@ img {
     flex-wrap: wrap;
     align-items: center;
     list-style: none;
-    margin-left: 515px;
 }
 .site-navigation a {
     font-weight: bold;
@@ -56,13 +55,16 @@ img {
     margin-left: 10px;
 }
 .promo {
-    position: relative;
-    width: 1000px;
     min-height: 350px;
     background-image: url("../images/banner.png");
     background-size: 100%;
     background-repeat: no-repeat;
     background-position: center center;
+}
+.promo-content {
+    position: relative;
+    width: 1000px;
+    margin: auto;
 }
 .main-logo {
     position: absolute;
@@ -79,7 +81,7 @@ img {
     color: #ffffff;
     text-align: center;
 }
-.promo p {
+.promo-content p {
     max-width: 400px;
     margin: 0 auto 10px;
     color: #ffffff;
@@ -105,39 +107,51 @@ img {
 /*-----advantages----*/
 .advantages-container {
     display: flex;
-    justify-content: center;
+    flex-wrap: wrap;
+    justify-content: space-around;
+    width: 1000px;
+    margin: auto;
 }
 .advantage {
     width: 280px;
-    margin: 30px 10px;
+    margin: 30px 0;
 }
 h2 {
     font-size: 34px;
     margin-bottom: 10px;
 }
+.grey-container {
+    background-color: #f7f7f7;
+}
 .advantage-moon-sea {
     display: flex;
+    flex-wrap: wrap;
     justify-content: center;
     align-items: center;
-    background-color: #f7f7f7;
+    width: 1000px;
+    margin: auto;
 }
 .advantage-place {
     display: flex;
+    flex-wrap: wrap;
     justify-content: center;
     align-items: center;
+    width: 1000px;
+    margin: auto;
 }
-.advantage-content {
+.advantage-text {
     width: 470px;
     margin: 40px 0;
 }
 .foto-moon-1 {
-    margin-left: 40px;
+    margin-left: 100px;
 }
 .foto-moon-2 {
-    margin-right: 40px;
+    margin-right: 100px;
 }
 /*------form-----*/
 .form-container {
+    margin: auto;
     width: 1000px;
     background-color: #f7f7f7;
 }
@@ -199,16 +213,19 @@ h2 {
 }
 .button-form-filter {
     padding: 10px 25px;
-    margin: 0 0 60px 300px;
+    margin: 0 260px 60px 0;
 }
 /*-----footer----*/
+.main-footer {
+    background-color: #303846;
+}
 .footer-container{
     display: flex;
-    justify-content: space-around;
+    justify-content: space-between;
     align-items: center;
+    margin: auto;
     width: 1000px;
     color: #ffffff;
-    background-color: #303846;
 }
 .footer-logo {
     display: flex;
