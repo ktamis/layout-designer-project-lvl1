@@ -24,6 +24,10 @@ img {
     z-index: 2;
     flex-direction: row;
     justify-content: space-between;
+    align-items: center;
+    top: 0;
+    left: 0;
+    padding: 0 20px;
     width: 100%;
     min-height: 60px;
     background-color: #ffffff;
@@ -31,37 +35,37 @@ img {
 .logo-small p {
     font-weight: bold;
     font-size: 16px;
-    margin: auto 10px;
+    margin-left: 10px;
 }
 .site-navigation {
     display: flex;
     flex-wrap: wrap;
     align-items: center;
     list-style: none;
+    margin: 0;
+    padding: 0;
 }
 .site-navigation a {
     font-weight: bold;
     font-size: 14px;
     font-stretch: normal;
     color: #303846;
-    margin: auto 10px ;
+    padding-right: 15px;
 }
 .logo-small {
     display: flex;
     justify-content: center;
     align-items: center;
 }
-.logo-small a {
-    margin-left: 10px;
-}
-.promo {
+.depiction {
     min-height: 350px;
+    margin-top: 60px;
     background-image: url("../images/banner.png");
     background-size: 100%;
     background-repeat: no-repeat;
     background-position: center center;
 }
-.promo-content {
+.depiction-content {
     position: relative;
     width: 1000px;
     margin: auto;
@@ -87,23 +91,23 @@ img {
     color: #ffffff;
     text-align: center;
 }
-.button-transparent {
-    font-family: "PT Sans", "Arial", sans-serif;
+.btn {font-family: "PT Sans", "Arial", sans-serif;
     font-size: 18px;
     font-weight: bold;
     font-stretch: normal;
     text-align: center;
-    color: #ffffff;
-    background-color: transparent;
-    border: 2px solid #ffffff;
-    border-radius:10px;
-}
-.button-transparent-filter {
     display: block;
     width: 140px;
     padding: 5px;
-    margin: 0 auto;
+    border-radius:10px;
 }
+.btn-transparent {
+    margin: 0 auto;
+    color: #ffffff;
+    background-color: transparent;
+    border: 2px solid #ffffff;
+}
+
 /*-----advantages----*/
 .advantages-container {
     display: flex;
@@ -202,18 +206,12 @@ h2 {
     border-radius: 10px;
     background-color: #ffffff;
 }
-.button-form {
-    font-size: 17px;
-    font-weight: bold;
-    color: #0adacb;
-    text-align: center;
-    border: 2px solid #0adacb;
-    border-radius:10px;
-    background-color: #ffffff;
-}
-.button-form-filter {
+.btn-form {
     padding: 10px 25px;
     margin: 0 260px 60px 0;
+    color: #0adacb;
+    border: 2px solid #0adacb;
+    background-color: #ffffff;
 }
 /*-----footer----*/
 .main-footer {
