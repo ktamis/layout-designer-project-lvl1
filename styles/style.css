@@ -1,6 +1,4 @@
-html {
-    box-sizing: border-box;
-}
+
 body {
     margin: 0;
     padding: 0;
@@ -25,6 +23,7 @@ img {
     flex-direction: row;
     justify-content: space-between;
     align-items: center;
+    box-sizing: border-box;
     top: 0;
     left: 0;
     padding: 0 20px;
@@ -59,11 +58,13 @@ img {
 }
 .depiction {
     min-height: 350px;
-    margin-top: 60px;
+    margin: -60px 0;
+    padding: 60px 0;
     background-image: url("../images/banner.png");
     background-size: 100%;
     background-repeat: no-repeat;
     background-position: center center;
+    background-clip:content-box
 }
 .depiction-content {
     position: relative;
@@ -85,7 +86,7 @@ img {
     color: #ffffff;
     text-align: center;
 }
-.promo-content p {
+.depiction-content p {
     max-width: 400px;
     margin: 0 auto 10px;
     color: #ffffff;
@@ -109,12 +110,20 @@ img {
 }
 
 /*-----advantages----*/
-.advantages-container {
+.container {
     display: flex;
     flex-wrap: wrap;
-    justify-content: space-around;
     width: 1000px;
     margin: auto;
+}
+.jc-c {
+    justify-content: center;
+}
+.ai-c {
+    align-items: center;
+}
+.jc-sar {
+    justify-content: space-around;
 }
 .advantage {
     width: 280px;
@@ -124,24 +133,8 @@ h2 {
     font-size: 34px;
     margin-bottom: 10px;
 }
-.grey-container {
+.bc-grey {
     background-color: #f7f7f7;
-}
-.advantage-moon-sea {
-    display: flex;
-    flex-wrap: wrap;
-    justify-content: center;
-    align-items: center;
-    width: 1000px;
-    margin: auto;
-}
-.advantage-place {
-    display: flex;
-    flex-wrap: wrap;
-    justify-content: center;
-    align-items: center;
-    width: 1000px;
-    margin: auto;
 }
 .advantage-text {
     width: 470px;
@@ -157,7 +150,6 @@ h2 {
 .form-container {
     margin: auto;
     width: 1000px;
-    background-color: #f7f7f7;
 }
 .form-container p {
     font-size: 34px;
