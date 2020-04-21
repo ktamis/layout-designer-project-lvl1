@@ -1,7 +1,7 @@
 
 body {
     margin: 0;
-    padding: 0;
+    padding: 60px 0 0 0;
     font-family: "PT Sans", "Arial", sans-serif;
     font-size: 16px;
     color: #303846;
@@ -15,10 +15,8 @@ img {
     max-width: 100%;
     height: auto;
 }
-
 .main-header {
     display: flex;
-    position: fixed;
     z-index: 2;
     flex-direction: row;
     justify-content: space-between;
@@ -29,6 +27,11 @@ img {
     padding: 0 20px;
     width: 100%;
     min-height: 60px;
+}
+.fixed-header {
+    position: fixed;
+}
+.color-header {
     background-color: #ffffff;
 }
 .logo-small p {
@@ -48,8 +51,8 @@ img {
     font-weight: bold;
     font-size: 14px;
     font-stretch: normal;
-    color: #303846;
     padding-right: 15px;
+    color: #303846;
 }
 .logo-small {
     display: flex;
@@ -57,56 +60,38 @@ img {
     align-items: center;
 }
 .depiction {
-    min-height: 350px;
-    margin: -60px 0;
-    padding: 60px 0;
     background-image: url("../images/banner.png");
     background-size: 100%;
     background-repeat: no-repeat;
     background-position: center center;
     background-clip:content-box
 }
-.depiction-content {
-    position: relative;
-    width: 1000px;
-    margin: auto;
-}
-.main-logo {
-    position: absolute;
-    align-items: center;
-    top: 90px;
-    left: 450px;
+.fd-column {
+    flex-direction: column;
 }
 .title {
     font-size: 38px;
     font-weight: bold;
-    max-width: 400px;
-    margin: 0 auto;
-    padding-top: 200px;
+    margin: 30px 0 0 0;
     color: #ffffff;
-    text-align: center;
 }
-.depiction-content p {
-    max-width: 400px;
-    margin: 0 auto 10px;
+.depiction p {
     color: #ffffff;
-    text-align: center;
 }
-.btn {font-family: "PT Sans", "Arial", sans-serif;
+.btn {
+    font-family: "PT Sans", "Arial", sans-serif;
     font-size: 18px;
     font-weight: bold;
     font-stretch: normal;
     text-align: center;
-    display: block;
-    width: 140px;
+    display: inline-block;
     padding: 5px;
     border-radius:10px;
+    border: 2px solid #ffffff;
 }
 .btn-transparent {
-    margin: 0 auto;
     color: #ffffff;
     background-color: transparent;
-    border: 2px solid #ffffff;
 }
 
 /*-----advantages----*/
@@ -115,19 +100,19 @@ img {
     flex-wrap: wrap;
     width: 1000px;
     margin: auto;
+    padding: 40px 0;
 }
-.jc-c {
+.jc-center {
     justify-content: center;
 }
-.ai-c {
+.ai-center {
     align-items: center;
 }
-.jc-sar {
+.jc-space-around {
     justify-content: space-around;
 }
-.advantage {
+.width-280 {
     width: 280px;
-    margin: 30px 0;
 }
 h2 {
     font-size: 34px;
@@ -136,62 +121,48 @@ h2 {
 .bc-grey {
     background-color: #f7f7f7;
 }
-.advantage-text {
+.width-470 {
     width: 470px;
-    margin: 40px 0;
 }
-.foto-moon-1 {
-    margin-left: 100px;
-}
-.foto-moon-2 {
-    margin-right: 100px;
-}
+
 /*------form-----*/
-.form-container {
-    margin: auto;
-    width: 1000px;
-}
-.form-container p {
-    font-size: 34px;
-    font-weight: bold;
-    margin-top: 50px;
-    text-align: center;
-}
+
 .user-form {
     display: flex;
     flex-direction: column;
-    justify-content: center;
     align-items: center;
 }
-.form-parameter {
+.fieldset-parameter {
     margin-bottom: 20px;
     width: 380px;
+}
+.fieldset-border {
     border-color: #0ac7b8;
 }
-.form-parameter legend {
+.fieldset-parameter legend {
     font-size: 20px;
     font-weight: bold;
     color: #0adacb;
 }
-.form-parameter label {
+.fieldset-parameter label {
     display: inline-block;
     width: 180px;
     font-weight: bold;
     margin: 10px 0;
 }
-.form-parameter select {
+.fieldset-parameter select {
     width: 140px;
     height: 30px;
+    font-size: 13px;
+    padding-left: 7px;
     background-color: #ffffff;
     border: 1.2pt solid #d3d3d3;
     border-radius: 10px;
-    font-size: 13px;
-    padding-left: 7px;
 }
-.form-parameter option {
+.fieldset-parameter option {
     font-size: 14px;
 }
-.form-parameter input {
+.fieldset-parameter input {
     width: 180px;
     height: 25px;
     border: 1.2pt solid #d3d3d3;
@@ -200,21 +171,22 @@ h2 {
 }
 .btn-form {
     padding: 10px 25px;
-    margin: 0 260px 60px 0;
+    align-self: flex-start;
+
+}
+.btn-green {
     color: #0adacb;
     border: 2px solid #0adacb;
     background-color: #ffffff;
 }
 /*-----footer----*/
-.main-footer {
+.back-color {
     background-color: #303846;
 }
-.footer-container{
-    display: flex;
+.jc-space-between {
     justify-content: space-between;
-    align-items: center;
-    margin: auto;
-    width: 1000px;
+}
+.c-white {
     color: #ffffff;
 }
 .footer-logo {
@@ -222,11 +194,11 @@ h2 {
     flex-direction: column;
     justify-content: left;
 }
-.footer-project p, .footer-copyright p {
+.footer-information p {
     font-size: 18px;
     font-weight: bold;
 }
-.footer-project ul, .footer-copyright ul {
+.footer-information ul {
     font-size: 12px;
     font-weight: bold;
 }
@@ -235,6 +207,4 @@ h2 {
     padding: 10px;
     color: darkgrey;
 }
-.footer-project, .footer-copyright {
-    padding: 20px 0 30px 0;
-}
+

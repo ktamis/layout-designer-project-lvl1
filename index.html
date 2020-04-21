@@ -11,7 +11,7 @@
           href="https://fonts.googleapis.com/css?family=PT+Sans:400,700&display=swap&subset=cyrillic-ext">
 </head>
 <body>
-<header class="main-header">
+<header class="main-header fixed-header color-header">
     <div class="logo-small">
         <a>
             <img src="images/logo.svg" width="30" height="30" alt="Логотип ЖК Лунное море">
@@ -28,8 +28,8 @@
 </header>
 <main>
     <section class="depiction">
-        <div class="depiction-content">
-            <a class="main-logo">
+        <div class="container  jc-center ai-center fd-column">
+            <a>
                 <img src="images/logo.svg" width="100" height="100" alt="Логотип ЖК Лунное море">
             </a>
             <h1 class="title">ЖК "Лунное море"</h1>
@@ -40,15 +40,15 @@
     </section>
     <!--advantages-->
     <section id="advantage">
-        <div class="container jc-sar">
-            <div class="advantage">
+        <div class="container jc-space-around">
+            <div class="width-280">
                 <h2>Уникальный вид</h2>
                 <p>
                     Вид на космос из вашего окна. Мы построили дома с большими окнами, чтобы вы могли наслаждаться
                     метеоритными потоками.
                 </p>
             </div>
-            <div class="advantage">
+            <div class="width-280">
                 <h2>Инфраструктура</h2>
                 <p>
                     Прекрасные дороги рядом с домом. Много мест для прогулки. Всего в 200 км. от посёлка находится
@@ -56,7 +56,7 @@
                     гор Кордильеры, на которых вы сможете провести незабываемые выходные.
                 </p>
             </div>
-            <div class="advantage">
+            <div class="width-280">
                 <h2>Близость к Москве</h2>
                 <p>
                     При небольшой цене мы располагаемся близко к МКАД. Всего 384 000 километров и вы в самом сердце
@@ -67,8 +67,8 @@
     </section>
 
     <section class="bc-grey" id="moon-sea">
-        <div class="container jc-c ai-c">
-            <div class="advantage-text">
+        <div class="container jc-space-around ai-center">
+            <div class="width-470">
                 <h2>О ЖК «Лунное море»</h2>
                 <p>
                     Все чаще жители Москвы предпочитают загородный дом городской квартире, к тому же связь с
@@ -80,23 +80,14 @@
                     Земли.
                 </p>
             </div>
-            <a class="foto-moon-1">
-                <img src="images/moon-1.jpg" width="300" alt="Космоснимок Луны">
-            </a>
-            <div>
-            </div>
+            <img src="images/moon-1.jpg" width="300" alt="Космоснимок Луны">
         </div>
     </section>
 
     <section id="place">
-        <div class="container jc-c ai-c">
-            <div>
-                <a class="foto-moon-2">
-                    <img src="images/moon-2.jpg" width="300"
-                         alt="Космоснимок лунной поверхности с отдыхающшим астронавтом">
-                </a>
-            </div>
-            <div class="advantage-text">
+        <div class="container jc-space-around ai-center">
+            <img src="images/moon-2.jpg" width="300" alt="Космоснимок лунной поверхности с рекламой">
+            <div class="width-470">
                 <h2>Места для отдыха</h2>
                 <p>
                     Луна обладает всеми условиями для комфортного отдыха от большого города. В вашем распоряжении 22
@@ -112,10 +103,10 @@
 
     <!--form-->
     <section class="bc-grey" id="form">
-        <div class="form-container ">
+        <div class="container jc-center ai-center">
             <form class="user-form" method="get" action="#">
-                <p>Оставьте заявку сегодня!</p>
-                <fieldset class="form-parameter">
+                <h2>Оставьте заявку сегодня!</h2>
+                <fieldset class="fieldset-parameter fieldset-border">
                     <legend>Параметры квартиры</legend>
                     <div>
                         <label for="quantity">Количество комнат:</label>
@@ -134,7 +125,7 @@
                         </select>
                     </div>
                 </fieldset>
-                <fieldset class="form-parameter">
+                <fieldset class="fieldset-parameter fieldset-border">
                     <legend>Контактная информация</legend>
                     <div>
                         <label for="name">Имя:</label>
@@ -149,17 +140,15 @@
                         <input type="text" id="mail">
                     </div>
                 </fieldset>
-                <button class="btn btn-form" type="submit">Отправить</button>
+                <button class="btn btn-form btn-green" type="submit">Отправить</button>
             </form>
-            <div>
-            </div>
         </div>
     </section>
     <!--end form-->
 </main>
 
-<footer class="main-footer">
-    <div class="footer-container">
+<footer class="back-color">
+    <div class="container ai-center jc-space-between c-white">
         <div class="footer-logo">
             <div class="logo-small">
                 <a>
@@ -169,14 +158,14 @@
             </div>
             <span>© 2032 год</span>
         </div>
-        <div class="footer-project">
+        <div class="footer-information">
             <p>Проектная документация</p>
             <ul>
                 <li>Скачать</li>
                 <li>Посмотреть на сайте</li>
             </ul>
         </div>
-        <div class="footer-copyright">
+        <div class="footer-information">
             <p>О застройщике</p>
             <ul>
                 <li>Отзывы</li>
