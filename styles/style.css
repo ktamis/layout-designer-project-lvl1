@@ -1,11 +1,33 @@
-
+:root {
+    --height-header: 60px;
+}
+:root {
+    --color-container: #f7f7f7;
+}
+:root {
+    --main-back-color: #ffffff;
+}
+:root {
+    --main-font-size: 16px;
+}
+:root {
+    --font-color: #ffffff;
+}
+:root {
+    --color-form-text: #0adacb;
+}
+:root {
+    --color-fieldset: #0ac7b8;
+}
+:root {
+    --font-family: "PT Sans", "Arial", sans-serif;
+}
 body {
     margin: 0;
-    padding: 60px 0 0 0;
-    font-family: "PT Sans", "Arial", sans-serif;
-    font-size: 16px;
-    color: #303846;
-    background-color: #ffffff;
+    padding: var(--height-header) 0 0 0;
+    font-family: var(--font-family);
+    font-size: var(--main-font-size);
+    background-color: var(--main-back-color);
     background-position: center;
 }
 a {
@@ -22,17 +44,17 @@ img {
     justify-content: space-between;
     align-items: center;
     box-sizing: border-box;
-    top: 0;
-    left: 0;
     padding: 0 20px;
     width: 100%;
-    min-height: 60px;
+    min-height: var(--height-header);
 }
 .fixed-header {
     position: fixed;
+    top: 0;
+    left: 0;
 }
 .color-header {
-    background-color: #ffffff;
+    background-color: var(--main-back-color);
 }
 .logo-small p {
     font-weight: bold;
@@ -69,14 +91,14 @@ img {
 .fd-column {
     flex-direction: column;
 }
-.title {
+h1 {
     font-size: 38px;
     font-weight: bold;
     margin: 30px 0 0 0;
-    color: #ffffff;
+    color: var(--font-color);
 }
 .depiction p {
-    color: #ffffff;
+    color: var(--font-color);
 }
 .btn {
     font-family: "PT Sans", "Arial", sans-serif;
@@ -90,7 +112,7 @@ img {
     border: 2px solid #ffffff;
 }
 .btn-transparent {
-    color: #ffffff;
+    color: var(--font-color);
     background-color: transparent;
 }
 
@@ -116,10 +138,10 @@ img {
 }
 h2 {
     font-size: 34px;
-    margin-bottom: 10px;
+    margin-bottom: 20px;
 }
 .bc-grey {
-    background-color: #f7f7f7;
+    background-color: var(--color-container);
 }
 .width-470 {
     width: 470px;
@@ -137,12 +159,12 @@ h2 {
     width: 380px;
 }
 .fieldset-border {
-    border-color: #0ac7b8;
+    border-color: var(--color-fieldset);
 }
 .fieldset-parameter legend {
     font-size: 20px;
     font-weight: bold;
-    color: #0adacb;
+    color: var(--color-form-text);
 }
 .fieldset-parameter label {
     display: inline-block;
@@ -155,7 +177,7 @@ h2 {
     height: 30px;
     font-size: 13px;
     padding-left: 7px;
-    background-color: #ffffff;
+    background-color: var(--main-back-color);
     border: 1.2pt solid #d3d3d3;
     border-radius: 10px;
 }
@@ -167,7 +189,7 @@ h2 {
     height: 25px;
     border: 1.2pt solid #d3d3d3;
     border-radius: 10px;
-    background-color: #ffffff;
+    background-color: var(--main-back-color);
 }
 .btn-form {
     padding: 10px 25px;
@@ -175,9 +197,9 @@ h2 {
 
 }
 .btn-green {
-    color: #0adacb;
-    border: 2px solid #0adacb;
-    background-color: #ffffff;
+    color: var(--color-form-text);
+    border: 2px solid var(--color-form-text);
+    background-color: var(--main-back-color);
 }
 /*-----footer----*/
 .back-color {
